@@ -1,0 +1,17 @@
+{
+  "name": "node-serveur-api",
+  "version": "1.0.0",
+  "description": "Creation of an API Rest",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Fanny",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
