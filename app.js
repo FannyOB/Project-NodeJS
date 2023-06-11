@@ -5,6 +5,11 @@ let pokemons = require('./mock-pokemon')
 const app = express() //création d'une instance grace à la méthode du même nom, ce sera notre petit serveur
 const port = 3000 //port ds lequel on démarre notre api
 
+app.use((req, res, next) =>{
+        console.log(`URL : ${req.url}`)
+        next()
+    })
+
 
 app.get('/',(req, res) => res.send('Hello again, Express 5! 👋🏾')) // "req" est la requete et "res" est la reponse objet renvoyé à notre client
 
